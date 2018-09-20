@@ -47,8 +47,8 @@ class Square{
         this.v += this.g;
         if(this.stage == 1)
         {
-            
-            
+
+
             this.x+=this.v;
             if(this.x >= (this.cX) + this.s ){
                 this.x=(this.cX)+this.s;
@@ -58,7 +58,7 @@ class Square{
         }
         if(this.stage == 2)
         {
-           
+
             this.y += this.v;
             if( this.y >= this.cY + this.s ){
                 this.y = this.cY + this.s;
@@ -67,7 +67,7 @@ class Square{
         }
         if(this.stage == 3)
         {
-            
+
             this.x -= this.v;
             if( this.x <= this.cX ){
                 this.x = this.cX;
@@ -76,7 +76,7 @@ class Square{
         }
         if(this.stage == 4)
         {
-            
+
             this.y -= this.v;
             if(this.y <= this.cY){
                 this.y = this.cY;
@@ -84,7 +84,7 @@ class Square{
             }
         }
 
-      
+
     }
 
 
@@ -111,7 +111,7 @@ class Circle
 
     move()
     {
-        
+
         this.v += this.g;
         this.deg=( this.count++ / 500 ) * this.v ;
         this.x = Math.round( Math.cos(this.deg) * this.r ) ;
@@ -121,7 +121,7 @@ class Circle
 
         var mx = this.cX+ this.y;
         var my = this.cY+ this.x;
-      
+
         this.point.move(mx, my);
 
     }
@@ -179,11 +179,11 @@ function draw() {
 
 
         //fill(255);
-      
+
         /* p.draw();
 
         //Move in circular form
-        
+
         v += gravity;
         deg=( frameCount / 500 ) * v ;
         x = Math.round( Math.cos(deg) * rD ) ;
@@ -198,7 +198,7 @@ function draw() {
 
         mx = cW-y;
         my = cH-x;
-      
+
         p.move(mx, my);
         cP.draw();
         cP.move(cW, cH);
@@ -211,8 +211,8 @@ function draw() {
 
 function drawSquare(cX, cY, s)
 {
-   
-        
+
+
 
 }
 function mouseMoved(e)
