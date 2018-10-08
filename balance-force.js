@@ -37,7 +37,7 @@ class Particle
 		var d = force.mag();
 		
 		var dsquared = constrain(d, 1, 25);
-		var G = 50;//6.67408;
+		var G = 25;//6.67408;
 		var strength = G/ dsquared;
 		force.setMag(strength * this.weight);
 		if(d<25)
